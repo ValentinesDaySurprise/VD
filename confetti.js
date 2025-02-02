@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function generateMoreEmojis() {
-        for (let i = 0; i < 5; i++) { // Increase this number to create more emojis at once
+        for (let i = 0; i < 1000; i++) { // Increase this number to create more emojis at once
             createEmoji();
         }
     }

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const emojis = ["😘", "💜", "💙"];
+    const emojis = ["😘", "💜", "💙", "💝"];
 
     function createEmoji() {
         const emoji = document.createElement("div");

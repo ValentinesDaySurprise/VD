@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
         emoji.style.fontSize = size + "px";
         emoji.style.animationDuration = Math.random() * 2 + 3 + "s"; // Between 3s and 5s
 
-        // Remove the emoji after animation
+        
         setTimeout(() => {
             emoji.remove();
         }, 5000);
     }
 
     // Generate multiple emojis over time
-    setInterval(createEmoji, 300);
+    setInterval(createEmoji, 999);
 });

@@ -20,6 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 5000);
     }
 
+    function generateMoreEmojis() {
+        for (let i = 0; i < 5; i++) { // Increase this number to create more emojis at once
+            createEmoji();
+        }
+    }
+
     // Generate multiple emojis over time
-    setInterval(createEmoji, 999);
+    setInterval(createEmoji, 20);
 });

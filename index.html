@@ -10,7 +10,7 @@
             text-align: center;
             background-color: #800080;
             color: #333;
-            overflow: hidden;
+            overflow-x: hidden; /* Allows scrolling while preventing horizontal overflow */
         }
         h1 { color: #ff4d6d; }
         .container {
@@ -61,12 +61,16 @@
 
 Desde el momento en que llegaste a mi vida, todo cambió. No importa la distancia, porque cada palabra tuya es un puente que me acerca a ti, cada risa tuya es un faro que ilumina mis días, y cada “te amo” que me das es un latido más en mi pecho. No hay suficientes palabras para describir lo que siento por ti. Es un amor que trasciende el espacio, que no necesita cercanía física para sentirse real, porque cada latido de mi corazón late por ti. Cuando me dices que me amas, cuando me llamas mi amor, mi vida, mi guapo, siento que no hay distancia capaz de apagar este fuego que arde entre nosotros. Sueño con el día en que ya no tengamos que despedirnos detrás de una pantalla. Que puedo tomar tu rostro entre mis manos, mirarte a los ojos sin ninguna barrera y decirte con voz temblorosa de emoción: Eres la mujer con quien quiero compartir mi vida. Quiero abrazarte tan fuerte que el universo entero sienta la intensidad de lo que hemos construido, beso a beso, palabra a palabra, latido a latido. Amor mío, gracias por ser tan increíble, por darme un amor puro, sincero y hermosa. Eres la luz de mis días y la paz de mis noches. Aunque la espera es difícil, vales la pena cada segundo. Te amo más con todo mi corazón hasta mi muerte Joanna bebé.
 
-Feliz día de San Valentín, mi amor.</b> ❤️</p>
+Feliz día de San Valentín, mi amor.</b>😘💜💙</p>
     </div>
 
     <script>
         function showMessage() {
-            document.getElementById('message').style.display = 'block';
+            let message = document.getElementById('message');
+            message.style.display = 'block';
+
+            // Scroll smoothly to the message
+            message.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     </script>
 
